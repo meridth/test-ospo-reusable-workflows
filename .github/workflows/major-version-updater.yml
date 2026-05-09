@@ -14,7 +14,7 @@ jobs:
   main:
     permissions:
       contents: write
-    uses: github/ospo-reusable-workflows/.github/workflows/major-version-updater.yaml@a0cf79bd8756e0a9c1555bf4975eae7ce7a8e8dc
+    uses: github/ospo-reusable-workflows/.github/workflows/major-version-updater.yaml@51be22c58e3d4b33b4fbdc1dcf257c481695ce36
     with:
       tag-name: ${{ github.event.inputs.TAG_NAME || github.ref}}
     secrets:
