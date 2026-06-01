@@ -12,7 +12,7 @@ jobs:
     permissions:
       contents: write
       pull-requests: read
-    uses: github-community-projects/ospo-reusable-workflows/.github/workflows/release.yaml@e92cb6053ace495fe40a5f185988557afcdcecbc
+    uses: github-community-projects/ospo-reusable-workflows/.github/workflows/release.yaml@6d7a83e6fc8275128984b0ed3defa4b8cdc40f85
     with:
       publish: true
       release-config-name: release-drafter.yml
@@ -25,7 +25,7 @@ jobs:
       packages: write
       id-token: write
       attestations: write
-    uses: github-community-projects/ospo-reusable-workflows/.github/workflows/release-image.yaml@e92cb6053ace495fe40a5f185988557afcdcecbc
+    uses: github-community-projects/ospo-reusable-workflows/.github/workflows/release-image.yaml@6d7a83e6fc8275128984b0ed3defa4b8cdc40f85
     with:
       image-name: ${{ github.repository }}
       full-tag: ${{ needs.release.outputs.full-tag }}
